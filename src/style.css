@@ -36,10 +36,16 @@ a:hover {
 }
 
 body {
-    min-width: 100vw;
-    min-height: 100vh;
-    overflow: hidden;
     background: url("./images/bg.jpg");
+    z-index: -1;
+}
+
+@media screen and (min-width: 500px) {
+    body {
+        min-width: 100vw;
+        min-height: 100vh;
+        overflow: hidden;
+    }
 }
 
 .globalHeader > .searchForm {
